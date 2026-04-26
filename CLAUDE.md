@@ -8,8 +8,8 @@ A **skeleton template** for cross-platform desktop apps built with **Tauri v2** 
 
 Sister templates (in adjacent directories) cover the sidecar variants:
 
-- `tauri_desktop_node_sidecar_template` — Tauri + Node.js/Express sidecar
-- `tauri_desktop_shell_sidecar_template` — Tauri + shell binary sidecar
+- `tauri-desktop-node-sidecar-template` — Tauri + Node.js/Express sidecar
+- `tauri-desktop-shell-sidecar-template` — Tauri + shell binary sidecar
 
 ## Build commands
 

@@ -23,7 +23,7 @@ Platform-specific extras:
 
 ```bash
 git clone <this-repo>
-cd tauri_desktop_raw_template
+cd tauri-desktop-raw-template
 npm install            # install JS dependencies
 npx tauri dev          # run the desktop app in dev mode (Rust + Vite together)
 ```
