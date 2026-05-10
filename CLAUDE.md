@@ -47,7 +47,7 @@ The single source of truth for the app version is **`src-tauri/tauri.conf.json` 
 
 ## CI / Release Workflows
 
-- **`build.yml`** — runs on every push/PR to `main`, runs `npm test` and `cargo test` then builds the Tauri bundle on macOS (ARM + Intel), Windows, Linux. Posts a PR comment with artifact download links.
+- **`build.yml`** — runs on every push/PR to `main`, runs `npm test` and `cargo test` then builds the Tauri bundle on macOS (ARM + Intel), Windows, Linux. A sibling `coverage` job runs `cargo llvm-cov --lib` on Linux and fails the build if Rust regions/functions/lines drop below the pinned baseline. Posts a PR comment with artifact download links.
 - **`release-official.yml`** — triggered by `v*` tag pushes or manual `workflow_dispatch`. Uses `synle/workflows/actions/release/begin-release` → matrix Tauri build → `end-release` to finalize. Sets `TAURI_RELEASE=true` for clean version strings.
 - **`release-beta.yml`** — manual `workflow_dispatch` only. Builds a draft prerelease tagged `release-beta-<date>-<sha>`.
 
