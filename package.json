@@ -1,6 +1,6 @@
 {
   "name": "tauri-desktop-raw-template",
-  "version": "0.1.0",
+  "version": "0.1.2",
   "description": "Skeleton Tauri v2 + React 19 + MUI v9 + TypeScript desktop app template (no sidecar).",
   "private": true,
   "scripts": {
